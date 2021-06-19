@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.container{
+   background: url(https://images.pexels.com/photos/4918147/pexels-photo-4918147.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    display: flex;
+}
+#typing{
+    margin-left: 10px;
+    position: relative;
+    color: #fff;
+}
+#typing::after{ content: ""; width: 1px; top: 5px; height:9%; border-right: 1px solid #fff; position:absolute; right: -5%; animation: animate 0.5s infinite ease; -webkit-animation: animate 0.5s infinite ease;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
